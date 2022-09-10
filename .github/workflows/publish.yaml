@@ -54,8 +54,6 @@ jobs:
       - name: Set prod env
         run: |
           echo "TAG=${{ github.ref_name }}" >> $GITHUB_ENV
-          echo "APP=${{ '${{TAG%@*}}' }}" >> $GITHUB_ENV
-          echo "VERSION=${{ '${{TAG##*@}}' }}" >> $GITHUB_ENV
           mv apps/cugetreg-web/.env.prod apps/cugetreg-web/.env
 
       - name: Set up Docker Buildx
@@ -75,5 +73,6 @@ jobs:
 
       - name: Tag and push Docker images
         run: |
+          ./tools/extract-git-tag
           docker image tag ${{ env.APP }} ghcr.io/tithanayut/${{ env.APP }}:${{ env.VERSION }}
           docker push ghcr.io/tithanayut/${{ env.APP }}:${{ env.VERSION }}

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "APP=${TAG%@*}" >> $GITHUB_ENV
+echo "VERSION=${TAG##*@}" >> $GITHUB_ENV
+echo "App: $APP | Version: $VERSION"
