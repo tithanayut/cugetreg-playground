@@ -112,6 +112,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/plugin-proposal-decorators": "7.18.9",
+    "@changesets/changelog-github": "^0.4.6",
     "@changesets/cli": "^2.24.4",
     "@emotion/babel-plugin": "11.10.0",
     "@nestjs/schematics": "^9.0.0",
