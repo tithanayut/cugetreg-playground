@@ -1,5 +1,11 @@
 # cugetreg-api
 
+## 2.0.0
+
+### Major Changes
+
+- [#4](https://github.com/tithanayut/cugetreg-playground/pull/4) [`5620ace`](https://github.com/tithanayut/cugetreg-playground/commit/5620ace5ccc5b08c9bf4105d1e45ee2cbd3c8ead) Thanks [@tithanayut](https://github.com/tithanayut)! - Add emoji
+
 ## 1.1.1
 
 ### Patch Changes
