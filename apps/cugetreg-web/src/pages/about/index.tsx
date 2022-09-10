@@ -54,6 +54,15 @@ export default function About() {
             color={theme.palette.secondaryRange[900]}
           >
             Facebook Page: Thinc.
+          </Link>{' '}
+          และ
+          <Link
+            href="https://www.instagram.com/thinc.in.th/"
+            target="_blank"
+            rel="noreferrer"
+            color={theme.palette.secondaryRange[900]}
+          >
+            Instagram: thinc.in.th
           </Link>
         </StyledArticleBody>
 
