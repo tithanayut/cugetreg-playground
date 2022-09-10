@@ -1,5 +1,11 @@
 # cugetreg-web
 
+## 2.0.0
+
+### Major Changes
+
+- [#15](https://github.com/tithanayut/cugetreg-playground/pull/15) [`e797fc2`](https://github.com/tithanayut/cugetreg-playground/commit/e797fc2f9956c83425421533ce6dbc9c0f99ba68) Thanks [@tithanayut](https://github.com/tithanayut)! - Add very important comment
+
 ## 1.10.2
 
 ### Patch Changes
