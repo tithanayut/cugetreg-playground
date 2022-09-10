@@ -337,6 +337,15 @@ importers:
       url-loader: 4.1.1_webpack@5.74.0
       webpack: 5.74.0
 
+  apps/cugetreg-api:
+    specifiers:
+      apollo-server-express: 2.19.2
+    dependencies:
+      apollo-server-express: 2.19.2_graphql@15.5.0
+
+  apps/cugetreg-web:
+    specifiers: {}
+
 packages:
 
   /@actions/exec/1.1.1:

@@ -18,7 +18,7 @@ export default function About() {
         <PageMeta title="เกี่ยวกับเรา" />
         <Typography variant="h1">เกี่ยวกับเรา</Typography>
         <Typography variant="h4" component="h2" gutterBottom>
-          ชมรม Thinc. จุฬาลงกรณ์มหาวิทยาลัย
+          ชมรม Thinc. มหาวิทยาลัยเกษตรศาสตร์
         </Typography>
         <StyledArticleBody variant="body1" paragraph>
           ชมรม Thinc. เป็นชมรมที่จัดตั้งและดำเนินการโดยนิสิต โดยสังกัดกรรมการนิสิตคณะวิศวกรรมศาสตร์
