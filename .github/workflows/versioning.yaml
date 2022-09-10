@@ -28,7 +28,7 @@ jobs:
           run_install: false
 
       - name: Install @changesets/cli
-        run: pnpm add -g @changesets/cli
+        run: pnpm add -g @changesets/cli @changesets/cli/changelog
 
       - name: Create Versioning Pull Request
         uses: changesets/action@v1
