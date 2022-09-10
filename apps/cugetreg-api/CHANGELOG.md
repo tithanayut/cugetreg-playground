@@ -1,5 +1,11 @@
 # cugetreg-api
 
+## 2.1.0
+
+### Minor Changes
+
+- [#17](https://github.com/tithanayut/cugetreg-playground/pull/17) [`cc7e7ea`](https://github.com/tithanayut/cugetreg-playground/commit/cc7e7ea29fa1cc501d4a1f48e1836c29680f9437) Thanks [@tithanayut](https://github.com/tithanayut)! - I want to cry
+
 ## 2.0.1
 
 ### Patch Changes
