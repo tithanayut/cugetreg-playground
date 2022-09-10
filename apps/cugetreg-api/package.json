@@ -1,9 +1,6 @@
 {
   "name": "cugetreg-api",
   "version": "1.1.0",
-  "scripts": {
-    "release": "echo 'Yeah!!!! cugetreg-api'"
-  },
   "dependencies": {
     "apollo-server-express": "2.19.2"
   }
