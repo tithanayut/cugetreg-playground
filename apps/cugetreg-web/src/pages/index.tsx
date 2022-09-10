@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 
 import { useLinkBuilder } from '@web/common/hooks/useLinkBuilder'
 
+/* Good Code */
 function HomePage() {
   const router = useRouter()
   const { buildLink } = useLinkBuilder()
