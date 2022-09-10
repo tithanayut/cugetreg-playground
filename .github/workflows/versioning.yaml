@@ -24,7 +24,9 @@ jobs:
         run: npm install -g pnpm
 
       - name: Install @changesets/cli
-        run: pnpm add -g @changesets/cli
+        run: |
+          pnpm setup
+          pnpm add -g @changesets/cli
 
       - name: Create Versioning Pull Request
         uses: changesets/action@v1
