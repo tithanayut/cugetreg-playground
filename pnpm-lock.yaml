@@ -8,6 +8,7 @@ importers:
       '@babel/core': ^7.18.10
       '@babel/plugin-proposal-decorators': 7.18.9
       '@babel/runtime': ^7.18.9
+      '@changesets/changelog-github': ^0.4.6
       '@changesets/cli': ^2.24.4
       '@emotion/babel-plugin': 11.10.0
       '@emotion/cache': 11.9.3
@@ -270,6 +271,7 @@ importers:
     devDependencies:
       '@babel/core': 7.18.10
       '@babel/plugin-proposal-decorators': 7.18.9_@babel+core@7.18.10
+      '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.24.4
       '@emotion/babel-plugin': 11.10.0_@babel+core@7.18.10
       '@nestjs/schematics': 9.0.1_typescript@4.7.4
@@ -336,6 +338,15 @@ importers:
       typescript: 4.7.4
       url-loader: 4.1.1_webpack@5.74.0
       webpack: 5.74.0
+
+  apps/cugetreg-api:
+    specifiers:
+      apollo-server-express: 2.19.2
+    dependencies:
+      apollo-server-express: 2.19.2_graphql@15.5.0
+
+  apps/cugetreg-web:
+    specifiers: {}
 
 packages:
 
@@ -1942,6 +1953,16 @@ packages:
       '@changesets/types': 5.1.0
     dev: true
 
+  /@changesets/changelog-github/0.4.6:
+    resolution: {integrity: sha512-ahR/+o3OPodzfG9kucEMU/tEtBgwy6QoJiWi1sDBPme8n3WjT6pBlbhqNYpWAJKilomwfjBGY0MTUTs6r9d1RQ==}
+    dependencies:
+      '@changesets/get-github-info': 0.5.1
+      '@changesets/types': 5.1.0
+      dotenv: 8.2.0
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@changesets/cli/2.24.4:
     resolution: {integrity: sha512-87JSwMv38zS3QW3062jXZYLsCNRtA08wa7vt3VnMmkGLfUMn2TTSfD+eSGVnKPJ/ycDCvAcCDnrv/B+gSX5KVA==}
     hasBin: true
@@ -2007,6 +2028,15 @@ packages:
       chalk: 2.4.2
       fs-extra: 7.0.1
       semver: 5.7.1
+    dev: true
+
+  /@changesets/get-github-info/0.5.1:
+    resolution: {integrity: sha512-w2yl3AuG+hFuEEmT6j1zDlg7GQLM/J2UxTmk0uJBMdRqHni4zXGe/vUlPfLom5KfX3cRfHc0hzGvloDPjWFNZw==}
+    dependencies:
+      dataloader: 1.4.0
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@changesets/get-release-plan/3.0.14:
@@ -8127,6 +8157,10 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
+  /dataloader/1.4.0:
+    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+    dev: true
+
   /date-fns/2.29.1:
     resolution: {integrity: sha512-dlLD5rKaKxpFdnjrs+5azHDFOPEu4ANy/LTh04A1DTzMM7qoajmKCBc8pkKRFT41CNzw+4gQh79X5C+Jq27HAw==}
     engines: {node: '>=0.11'}
@@ -8491,7 +8525,6 @@ packages:
   /dotenv/8.2.0:
     resolution: {integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==}
     engines: {node: '>=8'}
-    dev: false
 
   /duplexer/0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
