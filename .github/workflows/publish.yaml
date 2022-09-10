@@ -54,7 +54,8 @@ jobs:
       - name: Set prod env
         run: mv apps/cugetreg-web/.env.prod apps/cugetreg-web/.env
 
-      - name: Split branch name
+      - name: Extract app and version
+        id: extract
         env:
           TAG: ${{ github.ref_name }}
         run: |
@@ -73,9 +74,9 @@ jobs:
 
       - name: Build Docker images
         run: |
-          npx nx run ${{ env.APP }}:docker-build
+          npx nx run ${{ steps.extract.outputs.APP }}:docker-build
 
       - name: Tag and push Docker images
         run: |
-          docker image tag ${{ env.APP }} ghcr.io/tithanayut/${{ env.APP }}:${{ env.VERSION }}
-          docker push ghcr.io/tithanayut/${{ env.APP }}:${{ env.VERSION }}
+          docker image tag ${{ steps.extract.outputs.APP }} ghcr.io/tithanayut/${{ steps.extract.outputs.APP }}:${{ steps.extract.outputs.VERSION }}
+          docker push ghcr.io/tithanayut/${{ steps.extract.outputs.APP }}:${{ steps.extract.outputs.VERSION }}
