@@ -55,9 +55,7 @@ jobs:
         run: mv apps/cugetreg-web/.env.prod apps/cugetreg-web/.env
 
       - name: Extract git tag
-        run: |
-          echo "TAG=${{ github.ref_name }}" >> $GITHUB_ENV
-          ./tools/extract-git-tag
+        run: TAG="${{ github.ref_name }}" ./tools/extract-git-tag
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
