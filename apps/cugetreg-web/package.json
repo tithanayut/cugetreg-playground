@@ -2,6 +2,6 @@
   "name": "cugetreg-web",
   "version": "1.8.0",
   "scripts": {
-    "release": "echo 'Yeah!!!! cugetreg-web' && changeset version"
+    "release": "echo 'Yeah!!!! cugetreg-web'"
   }
 }
