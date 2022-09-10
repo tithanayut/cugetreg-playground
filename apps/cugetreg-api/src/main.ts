@@ -21,7 +21,7 @@ async function bootstrap() {
   const configService = app.get<ConfigService<Configuration>>(ConfigService)
   validateConfig(configService)
 
-  // Setup Cookie Parser
+  // Setup Cookie Parser !!!
   app.use(cookieParser())
 
   // Setup the global prefix
