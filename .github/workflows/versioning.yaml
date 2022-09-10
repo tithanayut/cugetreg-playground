@@ -54,14 +54,15 @@ jobs:
         run: |
           for APP in "cugetreg-web" "cugetreg-api"
           do
-            if git diff --quiet HEAD HEAD^ ./apps/$APP/package.json; then
-              PACKAGE_VERSION=$(cat ./apps/$APP/package.json \
+            PACKAGE_VERSION=$(cat ./apps/$APP/package.json \
                   | grep version \
                   | head -1 \
                   | awk -F: '{ print $2 }' \
                   | sed 's/[", ]//g')
+            TAG=$APP@$PACKAGE_VERSION
 
+            if ! git rev-parse "$TAG" >/dev/null 2>&1; then
               git tag $APP@$PACKAGE_VERSION
               git push origin $APP@$PACKAGE_VERSION
-            fi
+            fi 
           done
