@@ -53,10 +53,6 @@ jobs:
       - name: Publish
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git config user.password "${{ secrets.GITHUB_TOKEN }}"
-
           for APP in "cugetreg-web" "cugetreg-api"
           do
             PACKAGE_VERSION=$(cat ./apps/$APP/package.json \
