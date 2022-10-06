@@ -1,5 +1,15 @@
 # cugetreg-web
 
+## 3.0.0
+
+### Major Changes
+
+- [`59bfdea`](https://github.com/tithanayut/cugetreg-playground/commit/59bfdeaf7a541d917e021fff68ee4d3d6a8b3ff1) Thanks [@tithanayut](https://github.com/tithanayut)! - Another change
+
+### Patch Changes
+
+- [`2e95c83`](https://github.com/tithanayut/cugetreg-playground/commit/2e95c83bff5ce943c14d4172d3b1fb693222f25f) Thanks [@tithanayut](https://github.com/tithanayut)! - Test
+
 ## 2.0.0
 
 ### Major Changes
