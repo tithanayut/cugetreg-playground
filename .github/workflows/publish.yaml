@@ -4,34 +4,24 @@ on:
     tags: '*'
 
 permissions:
-  actions: read
-  checks: read
   contents: write
-  deployments: read
-  issues: write
-  discussions: read
   packages: write
-  pull-requests: write
-  repository-projects: write
-  security-events: read
-  statuses: write
 
 jobs:
   publish-docker-image:
     name: Publish Docker image
-    strategy:
-      matrix:
-        node-version: [16.17.0]
-        platform: [ubuntu-latest]
-
-    runs-on: ${{ matrix.platform }}
-
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.17.0
+
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2.2.2
         id: pnpm-install
         with:
           version: 7
@@ -73,10 +63,14 @@ jobs:
           password: ${{ github.token }}
 
       - name: Build Docker images
-        run: |
-          npx nx run ${{ steps.extract.outputs.APP }}:docker-build
+        run: npx nx run ${{ steps.extract.outputs.APP }}:docker-build
 
       - name: Tag and push Docker images
         run: |
           docker image tag ${{ steps.extract.outputs.APP }} ghcr.io/tithanayut/${{ steps.extract.outputs.APP }}:${{ steps.extract.outputs.VERSION }}
           docker push ghcr.io/tithanayut/${{ steps.extract.outputs.APP }}:${{ steps.extract.outputs.VERSION }}
+
+      - name: Create GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'apps/${{ steps.extract.outputs.APP }}/CHANGELOG.md'
