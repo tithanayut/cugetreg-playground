@@ -1,5 +1,11 @@
 # cugetreg-web
 
+## 4.0.1
+
+### Patch Changes
+
+- [`2b7efeb`](https://github.com/tithanayut/cugetreg-playground/commit/2b7efeb2289cf9d840ec1b1990385f0f6a4129ad) Thanks [@tithanayut](https://github.com/tithanayut)! - Patch
+
 ## 4.0.0
 
 ### Major Changes
