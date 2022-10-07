@@ -15,7 +15,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          # ssh-key: ${{ secrets.SSH_KEY }}
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -49,6 +48,11 @@ jobs:
         uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Deploy Key
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
 
       - name: Publish
         if: steps.changesets.outputs.hasChangesets == 'false'
