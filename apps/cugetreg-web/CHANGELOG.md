@@ -1,5 +1,15 @@
 # cugetreg-web
 
+## 5.0.0
+
+### Major Changes
+
+- [`45939db`](https://github.com/tithanayut/cugetreg-playground/commit/45939db6ac63af5584eefc0a77c384bd41857342) Thanks [@tithanayut](https://github.com/tithanayut)! - Versioning Release! This changeset is for testing all versioning system.
+
+### Patch Changes
+
+- [`b4b4a40`](https://github.com/tithanayut/cugetreg-playground/commit/b4b4a40b1b683a1fc698838974939970006541e0) Thanks [@tithanayut](https://github.com/tithanayut)! - Do some patch to make cugetreg-web better.
+
 ## 4.1.0
 
 ### Minor Changes
