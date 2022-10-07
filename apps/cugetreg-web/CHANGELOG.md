@@ -1,5 +1,13 @@
 # cugetreg-web
 
+## 3.0.1
+
+### Patch Changes
+
+- [`f72e2b4`](https://github.com/tithanayut/cugetreg-playground/commit/f72e2b4664144033c60b2cc488da60fd6f5ca495) Thanks [@tithanayut](https://github.com/tithanayut)! - A
+
+- [`a2f151b`](https://github.com/tithanayut/cugetreg-playground/commit/a2f151b688dc48e527b3ce622c7749fe093a6fac) Thanks [@tithanayut](https://github.com/tithanayut)! - Add cahnge
+
 ## 3.0.0
 
 ### Major Changes
