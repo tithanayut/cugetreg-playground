@@ -2,4 +2,4 @@
 'cugetreg-web': minor
 ---
 
-minor
+Do something minor
