@@ -1,5 +1,11 @@
 # cugetreg-web
 
+## 4.1.0
+
+### Minor Changes
+
+- [`8b3ca8e`](https://github.com/tithanayut/cugetreg-playground/commit/8b3ca8e516f7149bea84c69b5b9e13db88b537b0) Thanks [@tithanayut](https://github.com/tithanayut)! - Do something minor
+
 ## 4.0.1
 
 ### Patch Changes
