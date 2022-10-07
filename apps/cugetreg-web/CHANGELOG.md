@@ -1,5 +1,19 @@
 # cugetreg-web
 
+## 4.0.0
+
+### Major Changes
+
+- [`a255bef`](https://github.com/tithanayut/cugetreg-playground/commit/a255bef19fdc9b7152af865438fbfab63f7c6743) Thanks [@tithanayut](https://github.com/tithanayut)! - All bump
+
+### Minor Changes
+
+- [`7eefdc9`](https://github.com/tithanayut/cugetreg-playground/commit/7eefdc914c4c1d4d64224117b73f4ebccd82b16c) Thanks [@tithanayut](https://github.com/tithanayut)! - Changeset
+
+### Patch Changes
+
+- [`f4ebadc`](https://github.com/tithanayut/cugetreg-playground/commit/f4ebadca16ff5d1b3c8f8e6d6596f07e3d3240f7) Thanks [@tithanayut](https://github.com/tithanayut)! - 555
+
 ## 3.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # cugetreg-api
 
+## 3.0.0
+
+### Major Changes
+
+- [`a255bef`](https://github.com/tithanayut/cugetreg-playground/commit/a255bef19fdc9b7152af865438fbfab63f7c6743) Thanks [@tithanayut](https://github.com/tithanayut)! - All bump
+
 ## 2.1.0
 
 ### Minor Changes
