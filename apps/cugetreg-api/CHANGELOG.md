@@ -1,5 +1,11 @@
 # cugetreg-api
 
+## 4.0.0
+
+### Major Changes
+
+- [`45939db`](https://github.com/tithanayut/cugetreg-playground/commit/45939db6ac63af5584eefc0a77c384bd41857342) Thanks [@tithanayut](https://github.com/tithanayut)! - Versioning Release! This changeset is for testing all versioning system.
+
 ## 3.0.0
 
 ### Major Changes
