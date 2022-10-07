@@ -51,6 +51,7 @@ jobs:
 
       - name: Setup Deploy Key
         uses: webfactory/ssh-agent@v0.5.4
+        if: steps.changesets.outputs.hasChangesets == 'false'
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
 
